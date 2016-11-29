@@ -1,0 +1,131 @@
+include mixin/_mixin
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Welcome
+    meta(charset="utf-8")
+    +link('../css/main.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  body(class="white-light")
+    +spritsvg()
+    nav.navigationfixed
+     ul
+      li.navigation_li
+       a(href="../work.html") Мои работы
+      li.navigation_li
+       a(href="") Блог
+      li.navigation_li
+       a(href="../about.html") Обо мне
+      li.navigation_li
+       a(href="../login.html") Авторизация
+   .preloader
+     .preloader__container
+      .preloader__progres 
+      svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.802,13.327,7.802c6.665,0,6.665-7.802,13.33-7.802c6.667,0,6.667,7.802,13.334,7.802c6.666,0,6.666-7.802,13.331-7.802c6.67,0,6.67,7.802,13.339,7.802S73.33,38.005,80,38.005" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+   .wrapper
+    .table_row
+     .wrapper_head
+      .table.wrapper_head_navigation_left
+       ul.ul-link.table_cell.table_middle
+        li.ul-link_vk
+         a(href='#')
+          +svg('#icon-vk')
+        li.ul-link_git
+         a(href='#')
+          +svg('#icon-github')
+        li.ul-link_in
+         a(href='#')
+          +svg('#icon-in')
+      button.button_toggle
+       .button_toggle_line
+      .clearfix
+    .wrapper_row
+     .content
+      .box_icon
+       img.box_icon_img.img-reset(src="./img/men.png")
+      h1.content_name Блог
+      .patuka
+      +svgClass('content_blog','#icon-blog_header')
+      p.content_state Статьи, которые я написал
+      button.content_downwork.fa.fa-chevron-down(data-link="#one" data-offset="0")
+    svg(class="content_left" preserveAspectRatio="none" viewBox="0 0 1000 400")
+     path(fill-rule="evenodd" clip-rule="evenodd" d="M0 0l1000 200v200H0V0z")
+    svg(class="content_right" preserveAspectRatio="none" viewBox="0 0 1000 400")
+     path(fill-rule="evenodd" clip-rule="evenodd" d="M0 200L1000 0v400H0V200z")
+   .center
+    .center_NavigationMobile
+     .center_MobileButton 
+     nav.navbar
+      ul.navbar_ul
+       li.navbar_li
+        a.navbar_link(href="#one") Самое важное в SASS
+       li.navbar_li
+        a.navbar_link(href="#two") Приёмы в вёрстке, без которых не обходится ни один сайт
+    .center_navgitation
+     nav.navbar
+      ul.navbar_ul
+       li.navbar_li
+        a.navbar_link(href="#one") Самое важное в SASS
+       li.navbar_li
+        a.navbar_link(href="#two") Приёмы в вёрстке, без которых не обходится ни один сайт
+    .center_content
+     section.section#one
+      h1.section_title Самое важное в SASS
+      p.section_date 22 ноября 2016
+      .section_text
+       p.section_text_pТаким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+       p.section_text_p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+     section.section#two
+      h1.section_title Приёмы в вёрстке, без которых не обходится ни один сайт
+      p.section_date 13 ноября 2016
+      .section_text
+       p.section_text_p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+       p.section_text_p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+    .clearfix
+    button.content_up.fa.fa-chevron-up
+   footer.fot
+    .fot_cols
+     .fot_col.fot_left
+      .div
+       p.fot_school Этот сайт я сделал в рамках обучения
+        span в Школе онлайн образования LoftSchool
+     .fot_col
+      .div
+       nav.nav_top
+        ul.nav_ul
+         li.nav_li
+          a.nav_link(href="../work.html") Мои работы
+         li.nav_li
+          a.nav_link(href="../about.html") Обо мне
+         li.nav_li
+          a.nav_link(href="") Блог
+         li.nav_li
+          a.nav_link(href="../login.html") Авторизация
+        .clearfix
+       nav.nav_bottom
+        ul.ul-link
+         li.ul-link_vk
+          a(href='https://vk.com/id255900589')
+           +svg('#icon-vk')
+         li.ul-link_git
+          a(href='https://github.com/yaroslavert')
+           +svg('#icon-github')
+         li.ul-link_in
+          a(href='')
+           +svg('#icon-in')
+         .clearfix
+        .clearfix
+     .fot_col.fot_right
+      .div
+       p.fot_col_p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+       p.fot_col_p.fot_col_p_au — Martin Golding
+     .clearfix
+    .footer_text © Владимир Астахов |
+     span.footer_span  создано с любовью в LoftSchool | 2016
+  script(src="js/libs.min.js")
+  script(src="js/main.js")

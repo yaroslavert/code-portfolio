@@ -1,0 +1,51 @@
+include mixin/_mixin
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Welcome
+    meta(charset="utf-8")
+    +link('../css/main.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  body
+    .preloader
+     .preloader__container
+      .preloader__progres 
+      svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.802,13.327,7.802c6.665,0,6.665-7.802,13.33-7.802c6.667,0,6.667,7.802,13.334,7.802c6.666,0,6.666-7.802,13.331-7.802c6.67,0,6.67,7.802,13.339,7.802S73.33,38.005,80,38.005" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+   .wrapper
+    .wrapper_row
+     .wrapper_cell
+      .wrapper_box
+       .box.box_reset
+        h1.h_reset.san.san_big Авторизуйтесь
+        .patuka
+        .valid
+         .valid_login
+          input.valid_input(type="text" placeholder="Логін")
+         .valid_password
+          input.valid_input(type="password" placeholder="Пароль")
+         .valid_ck
+          input.valid_check(type="checkbox" id="ckeck")
+          label.valid_label(for="ckeck") Я человек
+         p.valid_people Вы точно не робот?
+         label.valid_radio
+          input.valid_radio_input(type="radio" name="rad") 
+          span Да
+         label.valid_radio
+          input.valid_radio_input(type="radio" name="rad") 
+          span Не уверен
+       .button
+          ul.ul-reset.button_ul.button_size-2
+           li.button_li
+             a.button_a(href="index.html") На главную
+           li.button_li
+             a.button_a(href="") Войти
+    footer.footer
+     .footer_text © Владимир Астахов |
+      span.footer_span  создано с любовью в LoftSchool | 2016
+  script(src="js/libs.min.js")
+  script(src="js/main.js")

@@ -1,0 +1,377 @@
+@media screen and (min-height:1000px){
+  .wrapper{
+    background-size: cover;
+  }
+}
+@media screen and (max-width:1400px){
+  .about__left{
+   padding: 20px 4% 0px 4%;
+   background: #ebefe2;
+  }
+  .about__wrapper__left{
+    width: 100%;
+    float: none;
+  }
+  .about__wrapper__right{
+    float: none;
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width:1200px){
+  .header_a{
+    margin: 20px 20px 0 0;
+  }
+  .commentwork_comment{
+    padding:15px;
+  }
+}
+@media screen and (max-width:1171px){
+  .about{
+    background:#ebefe2;
+  }
+}
+@media screen and (max-width:1150px){
+  .map__container{
+    transform: translate(-50%,-80%);
+  }
+  .fot_cols{
+    height: 235px;
+  }
+  .fot_col{
+    height: calc(60% - 60px);
+    width: 50%;
+  }
+  .fot_right{
+    float:none;
+    width: 100%;
+    height: 40%;
+    margin:0;
+    clear:both;
+  }
+}
+@media screen and (max-width:992px){
+  .center_navgitation{
+    padding:80px 0;
+  }
+}
+@media screen and (min-width:769px){
+  .center_NavigationMobile{
+    width: 30%;
+    float: left;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    display: none;
+    & *{
+      display: none;
+    }
+    &.activ{
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .navbar_li{
+    a{
+      color:rgba(255,255,255,0.7);
+      &:hover{
+        color:rgba(255,255,255,1);
+      }
+    }
+  }
+  .center_navgitation{
+    width: 30%;
+    float: left;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    display: none;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  .center_NavigationMobile{
+    width: 80%;
+    float: none;
+    padding: 80px 0px;
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #6c9c5a;
+    bottom: 0;
+    right: auto;
+    z-index: 999;
+    transform:translateX(-100%);
+    @include tr(0.5s);
+  }
+  .center_MobileButton{
+    content:'';
+    position: absolute;
+    top:50%;
+    right: -45px;
+    width: 90px;
+    height: 90px;
+    margin-top:-45px;
+    background: #6c9c5a;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .content_name{
+    font-size:(49/16)+em;
+  }
+  .center_content{
+    width: 100%;
+    padding:80px 30px;
+  }
+  .section_title{
+    font-size:(30/16)+em;
+  }
+  .mywork_BigFoto,.mywork_links{
+    float:none;
+    width: 100%;
+  }
+  .mywork_SlidLink{
+    height: auto;
+  }
+  .mywork_BigFoto{
+    height: 400px;
+  }
+  .mywork_links{
+    height: 370px;
+  }
+  .mywork_SmalFoto{
+    height: 215px;
+    width: 50%;
+  }
+  .commentwork_header_list{
+    display: none;
+  }
+  .mywork_title{
+    font-size: (47/16)+em;
+  }
+  .mywork_svg{
+       transform: translate(-50%, -65%) scale(1);
+  }
+  .block{
+    display: inline;
+  }
+  .mywork_links_title{
+    font-size: (30/16)+em;
+  }
+  .commentwork_comments{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .commentwork_comment{
+    font-size: (14/16)+em;
+  }
+  .commentwork_header_title{
+    font-size: (49/16)+em;
+  }
+  .commentwork_header_about{
+    transform: translate(-50%, -70%) scale(1);
+  }
+  .nav_link,.fot_school,.fot_col_p{
+    font-size: (14/16)+em;
+  }
+  .commentwork_contacmy{
+    width: 348px;
+  }
+  .center_fixed{
+    display: none;
+  }
+  .about__left,.about__right{
+    float: none;
+    width: 100%;
+  }
+  .about__texnol__skils{
+    text-align: center;
+  }
+  .about__texnol__skil{
+    margin: 10px 20px 0 0;
+  }
+  .about__rsvgbgr{
+    fill:#ebefe2;
+  }
+  .about__Lefth1{
+    font-size: (49/16)+em;
+  }
+  .about__LeftSvg{
+    width: 35%;
+  }
+  .about__Righth1{
+    font-size: (30/16)+em;
+  }
+  .navigation_li{
+    a{
+      font-size: (49/16)+em;
+    }
+  }
+}
+@media screen and (max-width:690px){
+  .map__container{
+    transform: translate(-50%,-90%);
+  }
+  .fot_cols{
+    height: 288px;
+  }
+  .fot_col{
+    width: 100%;
+    float:none;
+    margin:0;
+    padding: 0 20px !important;
+    height: auto;
+    text-align: center;
+    &:first-child{
+      .div{
+        padding: 15px 0;
+        border-bottom: 1px solid #777c7e;
+      }
+
+    }
+    &:nth-child(2){
+      .div{
+        padding: 15px 0;
+        border-bottom: 1px solid #777c7e;
+      }
+    }
+  }
+  .fot_school{
+    span{
+      display: block;
+    }
+  }
+  .nav_top{
+    ul{
+      display: table;
+      width: 100%;
+      text-align: center;
+      li{
+        float:none;
+        margin: 0 5px 0 0;
+        display: inline-block;
+      }
+    }
+  }
+  .nav_bottom{
+    margin-top:15px;
+    .ul-link{
+      li{
+        float:none;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+  .fot_right{
+    .div{
+      padding: 23px 0;
+    }
+  }
+}
+@media screen and (max-width:480px){
+  body{
+    @include em(14);
+  }
+  #map{
+    height: 610px;
+  }
+  .map__desctop{
+    display: none;
+  }
+  .map__mobile{
+    display: block;
+  }
+  .wrapper_box{
+    width:95%
+  }
+  .box{
+    padding:40px 20px 40px 20px;
+  }
+  .footer_span{
+    display: block;
+  }
+  .commentwork_contacmy{
+    width: 95%;
+  }
+  .about__Lefth1{
+    font-size: (35/14)+em;
+  }
+  .about__LeftSvg{
+    width: 60%;
+    transform: translate(-50%, -58px);
+  }
+  .about__Righth1{
+    font-size: (21/14)+em;
+  }
+  .about__texnol__title{
+    font-size: (20/14)+em;
+  }
+}
+@media screen and (max-width:320px){
+  .header{
+    text-align: center;
+    &_a{
+      margin: 10px 0 0 0;
+    }
+  }
+  .box{
+    padding:20px 10px 20px 10px;
+  }
+  .footer_text{
+    font-size: 14px;
+  }
+  .content_name{
+    font-size: (35/14)+em;
+  }
+  .section_title{
+    font-size: (21/14)+em;
+  }
+  .ul-link_vk{
+    width: 24px;
+    height: 13px;
+  }
+  .ul-link_git{
+    height: 17px;
+    width: 21px;
+  }
+  .ul-link_in{
+    width: 19px;
+    height: 17px;
+  }
+  .button_toggle{
+    height: 30px;
+  }
+  .wrapper_name{
+    font-size: (21/14)+em;
+  }
+  .content_down{
+    &::before{
+      font-size: 30px;
+    }
+  }
+  .mywork_title{
+    font-size: (35/14)+em;
+  }
+  .mywork_links_title{
+    font-size: (21/14)+em;
+  }
+  .commentwork_header_title{
+    font-size: (35/14)+em;
+  }
+  .mywork_svg,.commentwork_header_about{
+   transform: translate(-50%, -65%) scale(0.8);
+  }
+  .commentwork_comment{
+    float: none;
+    width: 100%;
+    padding: 10px 60px 10px 10px;
+  }
+  .navigation_li{
+    a{
+      font-size: (35/14)+em;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+include mixin/_mixin
+doctype html
+html(lang='en')
+  head 
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Welcome
+    meta(charset="utf-8")
+    +link('../css/main.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+  body
+    +spritsvg()
+    nav.navigationfixed
+     ul
+      li.navigation_li
+       a(href="../work.html") Мои работы
+      li.navigation_li
+       a(href="../blog.html") Блог
+      li.navigation_li
+       a(href="") Обо мне
+      li.navigation_li
+       a(href="../login.html") Авторизация
+    .preloader
+     .preloader__container
+      .preloader__progres 
+      svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.802,13.327,7.802c6.665,0,6.665-7.802,13.33-7.802c6.667,0,6.667,7.802,13.334,7.802c6.666,0,6.666-7.802,13.331-7.802c6.67,0,6.67,7.802,13.339,7.802S73.33,38.005,80,38.005" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+       path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362" stroke-dasharray="96.40425109863281" stroke-dashoffset="96.30425109863281")
+   .wrapper
+    +svgClass('wrapper_portfolio','#icon-portfolio_header')
+    .table_row
+     .wrapper_head
+      .table.wrapper_head_navigation_left
+       ul.ul-link.table_cell.table_middle
+        li.ul-link_vk
+         a(href='#').wow.bounceInLeft(data-wow-duration="1.2s" data-wow-offset="100")
+          +svg('#icon-vk')
+        li.ul-link_git
+         a(href='#').wow.rotateIn(data-wow-duration="2s" data-wow-offset="100")
+          +svg('#icon-github')
+        li.ul-link_in
+         a(href='#').wow.bounceInLeft(data-wow-duration="1.4s" data-wow-offset="100")
+          +svg('#icon-in')
+      button.button_toggle.wow.zoomInRight(data-wow-duration="2s" data-wow-offset="100")
+       .button_toggle_line
+      .clearfix
+    .wrapper_row
+     .content
+      .box_icon.wow.flipInY(data-wow-duration="2s" data-wow-offset="100") 
+       img.box_icon_img.img-reset(src="./img/men.png")
+      p.wrapper_name.wow.rubberBand(data-wow-duration="1s" data-wow-offset="100") Владимир Астахов 
+      p.wrapper_state Статьи, которые я написал
+      button.content_downwork.fa.fa-chevron-down(data-link=".about__left" data-offset="0")
+      svg(class="content_left about__lsvgbgr" preserveAspectRatio="none" viewBox="0 0 1000 400")
+       path(fill-rule="evenodd" clip-rule="evenodd" d="M0 0l1000 200v200H0V0z")
+      svg(class="content_right about__rsvgbgr" preserveAspectRatio="none" viewBox="0 0 1000 400")
+       path(fill-rule="evenodd" clip-rule="evenodd" d="M0 200L1000 0v400H0V200z")
+  Section.about
+   .about__left
+    .about__wrapper__left
+     h1.about__Lefth1 Обо мне
+     .patuka
+     +svgClass('about__LeftSvg','#icon-about_header')
+    .about__wrapper__right
+     .about__myfoto
+      img(src="img/men.png")
+     h1.about__Righth1 Кто я
+     .patuka
+     p.about__des Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты
+     p.about__des Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+    .clearfix
+   .about__right
+    h1.about__Righth1 Чем я могу быть 
+     span вам полезен
+    .patuka
+    p.about__des Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+    section.about__texnol
+     .about__texnol__skils
+      .about__texnol__title Frontend
+      +skil('10','HTML5')      
+      +skil('15','CSS3')
+      +skil('15','JavaScript & jQuery')
+     .about__texnol__skils
+      .about__texnol__title Backend
+      +skil('60','PHP')       
+      +skil('45','mySQL')
+      +skil('70','Node.js & npm')
+      +skil('30','Mongo.db')
+     .about__texnol__skils
+      .about__texnol__title WorkFlow
+      +skil('15','Git')      
+      +skil('25','Gulp')
+      +skil('30','Bower')
+   .clearfix
+  .map__container.map__mobile
+   h1.map__container__title Контакты
+   .patuka
+   ul.map__container__list
+    li.map__container__li
+     a.map__container__link
+      i.fa.fa-skype.map__container__icon
+      span YAROSLAV CHORNIY
+    li.map__container__li
+     a.map__container__link
+      i.fa.fa-envelope.map__container__icon
+      span yaroslavert02@gmail.com
+    li.map__container__li
+     a.map__container__link
+      i.fa.fa-phone.map__container__icon
+      span +380973460048
+    li.map__container__li
+     a.map__container__link
+      i.fa.fa-map-marker.map__container__icon
+      span Камянець-Подільський
+  .map 
+   .map__container.map__desctop
+    h1.map__container__title Контакты
+    .patuka
+    ul.map__container__list
+     li.map__container__li
+      a.map__container__link
+       i.fa.fa-skype.map__container__icon
+       span YAROSLAV CHORNIY
+     li.map__container__li
+      a.map__container__link
+       i.fa.fa-envelope.map__container__icon
+       span yaroslavert02@gmail.com
+     li.map__container__li
+      a.map__container__link
+       i.fa.fa-phone.map__container__icon
+       span +380973460048
+     li.map__container__li
+      a.map__container__link
+       i.fa.fa-map-marker.map__container__icon
+       span Камянець-Подільський
+   #map
+   footer.fot.map__fot
+    .fot_cols.map__cols
+     .fot_col.fot_left
+      .div
+       p.fot_school Этот сайт я сделал в рамках обучения
+        span в Школе онлайн образования LoftSchool
+     .fot_col
+      .div
+       nav.nav_top
+        ul.nav_ul
+         li.nav_li
+          a.nav_link(href="../work.html") Мои работы
+         li.nav_li
+          a.nav_link(href="") Обо мне
+         li.nav_li
+          a.nav_link(href="../blog.html") Блог
+         li.nav_li
+          a.nav_link(href="../login.html") Авторизация
+         .clearfix
+       nav.nav_bottom
+        ul.ul-link
+         li.ul-link_vk
+          a(href='https://vk.com/id255900589')
+           +svg('#icon-vk')
+         li.ul-link_git
+          a(href='https://github.com/yaroslavert')
+           +svg('#icon-github')
+         li.ul-link_in
+          a(href='')
+           +svg('#icon-in')
+         .clearfix
+        .clearfix
+     .fot_col.fot_right
+      .div
+       p.fot_col_p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+       p.fot_col_p.fot_col_p_au — Martin Golding
+     .clearfix
+    .footer_text © Владимир Астахов |
+     span.footer_span  создано с любовью в LoftSchool | 2016
+  script(src="js/libs.min.js")
+  script(src="js/main.js")
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAadF8bwOnEmEZ-2Swdrx-PWyzlgNsESbo&callback=initMap")

@@ -1,0 +1,18 @@
+mixin link(href)
+ link(rel="stylesheet" type="text/css" href=href)
+mixin spritsvg()
+ div.sprites-container
+  include ../../sprite/symbol/bg-sprite.svg
+mixin svg(name)
+ svg
+  use(use xlink:href=name)
+  include ../../sprite/symbol/bg-sprite.svg
+mixin svgClass(clas,name)
+ svg(class=clas)
+  use(use xlink:href=name)
+mixin skil(p,t)
+ .about__texnol__skil
+  div.about__texnol__name #{t}
+  svg(viewBox="0 0 120 120" class="about__texnol__progres")
+   circle(fill="none" stroke-width="20" stroke-dasharray="314.159265" stroke-dashoffset="314.159265" cx="60" cy="60" r="50" transform="rotate(-90, 60, 60)" class="about__texnol__progres__bottom")
+   circle(data-percentage=p fill="none" stroke-width="20" stroke-dasharray="314.159265" stroke-dashoffset="314.159265" cx="60" cy="60" r="50" transform="rotate(-90, 60, 60)" class="about__texnol__progres__top")
